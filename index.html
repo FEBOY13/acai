@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Açaí 2 Irmãos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f4ff;
+      color: #3e0e50;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 2.2em;
+      color: #8e44ad;
+      text-shadow: 0 0 3px #a26ecb;
+      margin-bottom: 5px;
+      animation: softPulse 3s ease-in-out infinite;
+    }
+
+    header p {
+      font-size: 1em;
+      color: #aa7bdc;
+      text-shadow: 0 0 2px #aa7bdc;
+    }
+
+    @keyframes softPulse {
+      0%, 100% { text-shadow: 0 0 3px #a26ecb; }
+      50% { text-shadow: 0 0 6px #a26ecb; }
+    }
+
+    .banner {
+      width: 100%;
+      max-width: 600px; /* Diminuído para não ocupar tanto espaço */
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+      margin-bottom: 20px;
+    }
+
+    .banner img {
+      width: 100%;
+      display: block;
+    }
+
+    .frases {
+      max-width: 500px;
+      text-align: center;
+      font-size: 1em;
+      line-height: 1.4;
+      margin: 15px 0;
+    }
+
+    .frases p {
+      margin-bottom: 10px;
+    }
+
+    .botao {
+      display: inline-block;
+      background-color: #800080;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1em;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: background 0.3s;
+      box-shadow: 0 4px 8px rgba(128, 0, 128, 0.4);
+      margin: 10px 0;
+    }
+
+    .botao:hover {
+      background-color: #a020f0;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.8em;
+      color: #777;
+      text-align: center;
+    }
+
+    /* Responsivo */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+
+      .banner {
+        max-width: 90%;
+      }
+
+      .botao {
+        font-size: 0.9em;
+        padding: 10px 20px;
+      }
+
+      .frases {
+        font-size: 0.9em;
+        padding: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body oncontextmenu="return false">
+
+  <header>
+    <h1>Açaí 2 Irmãos</h1>
+    <p>O verdadeiro sabor do Pará chegou!</p>
+  </header>
+
+  <div class="banner">
+    <img src="img 3.png" alt="Banner da loja Açaí 2 Irmãos">
+  </div>
+
+  <a href="https://wa.me/5511954897249" target="_blank" class="botao">
+    Confira o Verdadeiro sabor de um açaí do Pará!
+  </a>
+
+  <section class="frases">
+    <p>🍇 Direto do Pará, o verdadeiro sabor do açaí chegou com os 2 Irmãos!</p>
+  </section>
+
+  <div class="banner">
+    <img src="img1.jpg" alt="Banner da loja Açaí 2 Irmãos">
+  </div>
+
+  <a href="https://wa.me/5511954897249" target="_blank" class="botao">
+    Aproveite e Experimente Oque a de melhor em açai ! 
+  </a>
+
+  <section class="frases">
+    <p>💜 Somos do Pará — e trouxemos o açaí como ele deve ser!</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Açaí 2 Irmãos. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Desativa botões e inspeção simples -->
+  <script>
+    document.addEventListener('keydown', function(e) {
+      if (
+        e.key === "F12" || 
+        (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J" || e.key === "C")) || 
+        (e.ctrlKey && e.key === "U")
+      ) {
+        e.preventDefault();
+        alert("Função desativada.");
+      }
+    });
+  </script>
+
+</body>
+</html>
